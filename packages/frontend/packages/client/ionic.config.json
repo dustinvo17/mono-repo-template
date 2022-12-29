@@ -1,7 +1,0 @@
-{
-  "name": "platform",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
