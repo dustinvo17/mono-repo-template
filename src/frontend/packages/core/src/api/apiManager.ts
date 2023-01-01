@@ -1,6 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from "axios";
 import chalk from "chalk";
-import { config } from "../config";
 
 class ApiManager {
   client: AxiosInstance;

@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import { usePubSub } from "core";
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
