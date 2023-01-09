@@ -20,5 +20,5 @@ jobs:
 
       - name: Build Full Stack App
         run: |
-          ./build.sh
+          sh ./build.sh
         shell: bash
