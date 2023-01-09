@@ -20,6 +20,8 @@ jobs:
 
       - name: Build Full Stack App
         run: |
+          echo "=====> Installing dependencies..."
           yarn install 
           yarn bootstrap
+          echo "=====> Building"
           yarn build
