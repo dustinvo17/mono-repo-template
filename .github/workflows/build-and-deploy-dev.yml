@@ -20,5 +20,6 @@ jobs:
 
       - name: Build Full Stack App
         run: |
-          sh ./build-fullstack.sh
-        shell: bash
+          yarn install 
+          yarn bootstrap
+          yarn build

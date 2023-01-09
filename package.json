@@ -6,7 +6,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build  --stream",
+    "build": "lerna run build  --stream && cp -r src/frontend/packages/app/dist/ src/backend/client/",
     "start": "lerna run start  --stream"
   },
   "workspaces": {
