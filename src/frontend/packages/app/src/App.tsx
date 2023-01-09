@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    fetch("/").then(console.log);
-  }, [])
   return (
     <div className="App">
       <div>
@@ -22,7 +18,6 @@ function App() {
       <div className="card">
         <button onClick={() => {
         }}>
-          count is {count}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR

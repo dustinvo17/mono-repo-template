@@ -7,8 +7,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build  --stream",
-    "start": "lerna run start  --stream",
-    "go": "sh ./go.sh"
+    "start": "lerna run start  --stream"
   },
   "workspaces": {
     "packages": [

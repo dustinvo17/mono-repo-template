@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { MongoService } from 'mongo/mongo.service';
+import { MongoService } from 'src/mongo/mongo.service';
 
 @Controller()
 export class AppController {
@@ -8,6 +8,8 @@ export class AppController {
 
   @Get("/hello")
   async getHello(): Promise<any> {
-    return "";
+    return {
+      hello: "ok"
+    }
   }
 }

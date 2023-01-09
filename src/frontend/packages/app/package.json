@@ -4,14 +4,15 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "VITE_API_URL=http://localhost:3001 vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "core": "0.0.1"
+    "core": "0.0.1",
+    "domain": "0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
