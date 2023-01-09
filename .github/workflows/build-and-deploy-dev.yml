@@ -20,13 +20,5 @@ jobs:
 
       - name: Build Full Stack App
         run: |
-          echo "========> Building UI Static Content..."
-          yarn install && yarn bootstrap
-          yarn build --scope=frontend
-
-          echo "========> Copying UI Static Content To Server..."
-          cp -r src/frontend/packages/app/dist/ src/backend/client/
-
-          echo "=========> Building Server"
-          yarn build --scope=backend
+          ./build.sh
         shell: bash
