@@ -23,5 +23,5 @@ jobs:
           echo "=====> Installing dependencies..."
           yarn install 
           yarn bootstrap
-          echo "=====> Building"
+          echo "=====> Building..."
           yarn build
