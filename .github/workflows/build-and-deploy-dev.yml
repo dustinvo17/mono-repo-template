@@ -22,6 +22,7 @@ jobs:
         run: |
           yarn install && yarn bootstrap
           yarn build --scope=frontend
+          echo "Copying static content..."
           cp -r src/frontend/packages/app/dist/ src/backend/client/
           yarn build --scope=backend
         shell: bash
