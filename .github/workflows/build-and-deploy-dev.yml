@@ -20,9 +20,5 @@ jobs:
 
       - name: Build Full Stack App
         run: |
-          yarn install && yarn bootstrap
-          yarn build --scope=frontend
-          echo "Copying static content..."
-          cp -r src/frontend/packages/app/dist/ src/backend/client/
-          yarn build --scope=backend
+          chmod +x script/build.sh
         shell: bash
