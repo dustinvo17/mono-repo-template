@@ -1,0 +1,18 @@
+name: DEV - Build & Deploy
+
+on:
+  push:
+    branches: ["develop"]
+jobs:
+  build-igym-pwa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+
+      - name: Build
+        run: |
+          chmod +x ./script/build-fullstack-app.sh
