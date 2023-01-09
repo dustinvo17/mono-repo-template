@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly mongoService: MongoService) {
   }
 
-  @Get()
+  @Get("/hello")
   async getHello(): Promise<any> {
     return "";
   }

@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import { usePubSubStore } from "core";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    fetch("/").then(console.log);
+  }, [])
   return (
     <div className="App">
       <div>
@@ -16,7 +18,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Vite21212+ React</h1>
       <div className="card">
         <button onClick={() => {
         }}>
