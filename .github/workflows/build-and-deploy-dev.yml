@@ -4,7 +4,7 @@ on:
   push:
     branches: ["develop"]
 jobs:
-  build-igym-pwa:
+  build-deploy-fullstack-app:
     runs-on: ubuntu-latest
     steps:
       - name: Git
@@ -13,6 +13,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
 
-      - name: Build
+      - name: Build Full Stack App
         run: |
-          chmod +x ./script/build-fullstack-app.sh
+          yarn install && yarn bootstrap
+          yarn build --scope=frontend
+          cp -r src/frontend/packages/app/dist/ src/backend/client/
+          yarn build --scope=backend
+        shell: bash
