@@ -1,12 +1,12 @@
 {
-  "name": "core",
+  "name": "client-core",
   "version": "0.0.1",
   "private": true,
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
     "build": "npx rollup -c",
-    "start": "npx rollup -c -w"  
+    "start": "npx rollup -c -w"
   },
   "devDependencies": {
     "rollup": "^2.70.1",

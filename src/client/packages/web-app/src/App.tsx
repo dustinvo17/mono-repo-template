@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import * as a from "client-core";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    fetch("/api/hello").then(data => data.json()).then(console.log)
+  }, [])
   return (
     <div className="App">
       <div>
@@ -14,13 +19,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite21212+ React</h1>
+      <h1>Vite 1997+ React</h1>
       <div className="card">
         <button onClick={() => {
         }}>
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit 2 <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
