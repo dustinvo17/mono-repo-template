@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import * as a from "client-core";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    fetch("/api/hello").then(data => data.json()).then(console.log)
-  }, [])
   return (
     <div className="App">
       <div>
